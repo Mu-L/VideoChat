@@ -1,9 +1,7 @@
 # 数字人对话demo
-实时语音交互数字人，支持端到端语音方案（GLM-4-Voice - THG）和级联方案（ASR-LLM-TTS-THG）。可自定义形象与音色，支持音色克隆，首包延迟低至3s。
+实时语音交互数字人，支持端到端（MLLM - THG）和级联（ASR-LLM-TTS-THG）。可自定义形象与音色，支持音色克隆，首包延迟低至3s。
 
-在线demo：https://www.modelscope.cn/studios/AI-ModelScope/video_chat
-
-详细的技术介绍请看[这篇文章](https://mp.weixin.qq.com/s/jpoB8O2IyjhXeAWNWnAj7A)
+技术介绍：[量子位推文](https://mp.weixin.qq.com/s/jpoB8O2IyjhXeAWNWnAj7A)
 
 **中文简体** | [**English**](./docs/README_en.md)
 
@@ -11,14 +9,6 @@
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Henry-23/VideoChat&type=Date)](https://www.star-history.com/#Henry-23/VideoChat&Date)
 
-## TODO
-- [x] TTS模块添加音色克隆功能
-- [x] TTS模块添加edge-tts
-- [x] LLM模块添加qwen本地推理
-- [x] 支持GLM-4-Voice，提供ASR-LLM-TTS-THG和MLLM-THG两种生成方式
-- [ ] GLM-4-Voice集成vllm推理加速
-- [ ] 集成[gradio-webrtc](https://github.com/freddyaboulton/gradio-webrtc)（需等待支持音视频同步），提高视频流稳定性
- 
 ## 技术选型
 * ASR (Automatic Speech Recognition): [FunASR](https://github.com/modelscope/FunASR)
 * LLM (Large Language Model): [Qwen](https://github.com/QwenLM/Qwen)
@@ -39,11 +29,11 @@ $ git checkout cascade_only
 ```
 
 ### 1. 环境配置
-
 * ubuntu 22.04
 * python 3.10
 * CUDA 12.2
 * torch 2.3.0
+> 仅供参考，最新依赖请查看对应模块的Repo
 
 ```bash
 $ git lfs install
