@@ -32,8 +32,6 @@ $ git checkout cascade_only
 * ubuntu 22.04
 * python 3.10
 * CUDA 12.2
-* torch 2.3.0
-> 仅供参考，最新依赖请查看对应模块的Repo
 
 ```bash
 $ git lfs install
@@ -43,6 +41,7 @@ $ conda activate metahuman
 $ cd video_chat
 $ pip install -r requirements.txt
 ```
+> requirements中的版本仅供参考，最新依赖请查看对应模块的Repo说明
 
 ### 2. 权重下载
 #### 2.1 创空间下载（推荐）
